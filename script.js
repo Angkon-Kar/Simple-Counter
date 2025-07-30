@@ -15,6 +15,9 @@ const resetBtn = document.getElementById('resetBtn');
 const storyBtn = document.getElementById('storyBtn'); // New button for Gemini API
 const storyDisplay = document.getElementById('storyDisplay'); // New element for story display
 
+const clickSound = document.getElementById('clickSound');
+
+
 /**
  * Updates the display of the counter and click counts.
  * This function is called after every increment, decrement, or reset operation.
