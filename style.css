@@ -162,3 +162,13 @@ button:active {
     border-bottom: none;
 }
 
+.clicks-info span {
+    font-weight: 700;
+    color: #00ffff;
+    text-shadow: 0 0 10px rgba(0, 255, 255, 0.6);
+    min-width: 50px;
+    text-align: right;
+    font-size: 1.4em;
+    letter-spacing: 2px;
+}
+
