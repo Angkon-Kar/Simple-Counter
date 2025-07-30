@@ -16,7 +16,7 @@ const storyBtn = document.getElementById('storyBtn'); // New button for Gemini A
 const storyDisplay = document.getElementById('storyDisplay'); // New element for story display
 
 const clickSound = document.getElementById('clickSound');
-
+const resetSound = document.getElementById('resetSound');
 
 /**
  * Updates the display of the counter and click counts.
