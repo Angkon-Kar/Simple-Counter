@@ -59,6 +59,9 @@ function dec() {
     count--;
     decClicks++;
     updateDisplay();
+    clickSound.currentTime = 0;
+    clickSound.play();
+
 }
 
 /**
