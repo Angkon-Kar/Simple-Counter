@@ -93,7 +93,12 @@ async function generateStory() {
             }
 
             if (!response.ok) {
-                throw new Error(`HTTP error! status: ${response.status}`);
+                // More specific error message for 403
+                if (response.status === 403) {
+                    throw new Error(`HTTP error! status: ${response.status}. This usually means your API key is invalid or lacks permissions. Please ensure the "Generative Language API" is enabled in your Google Cloud Project and billing is set up if required.`);
+                } else {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
             }
 
             const result = await response.json();
