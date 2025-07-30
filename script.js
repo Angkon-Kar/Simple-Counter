@@ -17,6 +17,7 @@ const storyDisplay = document.getElementById('storyDisplay'); // New element for
 
 const clickSound = document.getElementById('clickSound');
 const resetSound = document.getElementById('resetSound');
+const toggleSound = document.getElementById('toggleSound');
 
 /**
  * Updates the display of the counter and click counts.
