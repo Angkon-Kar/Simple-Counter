@@ -1,0 +1,12 @@
+body{
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background: radial-gradient(circle at top left, #2c3e50 0%, #1a252f 100%);
+    color: #e0e6ed;
+    overflow: hidden;
+}
+
