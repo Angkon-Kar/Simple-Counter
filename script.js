@@ -70,6 +70,8 @@ function reset() {
     incClicks = 0;
     decClicks = 0;
     updateDisplay();
+    resetSound.currentTime = 0;
+    resetSound.play(); // 🔊 Sound on reset
     storyDisplay.textContent = 'Click "✨ Get Counter Story ✨" to get a fun fact or story!'; // Clear story on reset
 }
 
