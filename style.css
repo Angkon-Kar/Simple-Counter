@@ -51,3 +51,21 @@ body::before {
         0 0 20px rgba(0, 255, 255, 0.5);
     letter-spacing: 2px;
 }
+
+.counter-display {
+    font-family: 'space-mono', monospace;
+    font-size: 7em;
+    font-weight: 700;
+    color: #00ffff;
+    margin-bottom: 40px;
+    text-shadow: 
+        0 0 10px #00ffff,
+        0 0 20px rgba(0, 255, 255, 0.5);
+    letter-spacing: 8px;
+    background: rgba(0, 0, 0, 0.3);
+    padding: 15px 15px;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 255, 255, 0.3);
+    display: inline-block;
+    min-width: 250px;
+}
