@@ -113,3 +113,9 @@ button:active {
     content: '+';
     margin-right: 8px;
 }
+
+
+#resetBtn::before {
+    content: '↻';
+    margin-right: 8px;
+}
