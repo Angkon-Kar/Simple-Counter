@@ -1,18 +1,29 @@
+/* Custom styles for a unique, digital-themed look */
+html, body {
+    height: 100%; /* Ensure html and body take full viewport height */
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
 body {
     font-family: 'Inter', sans-serif;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    margin: 0;
-    background: radial-gradient(circle at top left, #2c3e50 0%, #1a252f 100%);
-    color: #e0e6ed;
-    overflow: hidden;
+    flex-direction: column; /* Arrange content in a column */
+    /* Removed justify-content: center here to allow content to start from top and scroll */
+    align-items: center; /* Center horizontally */
+    min-height: 100vh; /* Ensure body is at least viewport height */
+    background: radial-gradient(circle at top left, #2c3e50 0%, #1a252f 100%); /* Deep, dark radial gradient */
+    color: #e0e6ed; /* Light text for contrast */
+    overflow-y: auto; /* Allow vertical scrolling if content overflows */
+    padding: 20px; /* Add padding around the entire content */
+    box-sizing: border-box; /* Include padding in element's total width and height */
 }
 
+/* Background grid/dots effect */
 body::before {
     content: '';
-    position: absolute;
+    position: fixed; /* Fixed so it doesn't scroll with content */
     top: 0;
     left: 0;
     width: 100%;
@@ -27,116 +38,106 @@ body::before {
 
 .container {
     text-align: center;
-    padding: 45px;
-    border-radius: 20px;
-    background: rgba(30, 40, 50, 0.85);
-    border: 1px solid rgba(70, 80, 90, 0.5);
-    box-shadow: 0 0 30px rgba(0, 255, 255, 0.2), 0 0 60px rgba(0, 255, 255, 0.1);
-    max-width: 500px;
+    padding: 45px; /* Generous padding */
+    border-radius: 20px; /* Rounded corners */
+    background: rgba(30, 40, 50, 0.85); /* Semi-transparent dark background */
+    border: 1px solid rgba(70, 80, 90, 0.5); /* Subtle border */
+    box-shadow: 0 0 30px rgba(0, 255, 255, 0.2), 0 0 60px rgba(0, 255, 255, 0.1); /* Cyan glow shadow */
+    max-width: 500px; /* Wider container */
     width: 90%;
     position: relative;
-    z-index: 1;
+    z-index: 1; /* Ensure it's above the background effect */
+    margin: auto; /* Center the container itself within the flex body, allows top to be visible on overflow */
 }
 
 .header {
-    font-family: 'Space Mono', monospace;
-    font-size: 2.8em;
+    font-family: 'Space Mono', monospace; /* Digital font for header */
+    font-size: 2.8em; /* Larger header */
     font-weight: 700;
     margin-bottom: 30px;
-    color: #00ffff;
-    text-shadow: 0 0 10px #00ffff, 0 0 20px rgba(0, 255, 255, 0.5);
+    color: #00ffff; /* Cyan color */
+    text-shadow: 0 0 10px #00ffff, 0 0 20px rgba(0, 255, 255, 0.5); /* Neon glow effect */
     letter-spacing: 2px;
 }
 
 .counter-display {
-    font-family: 'Space Mono', monospace;
-    font-size: 7em;
+    font-family: 'Space Mono', monospace; /* Digital font for counter */
+    font-size: 7em; /* Very large counter font */
     font-weight: 700;
     margin-bottom: 40px;
-    color: #00ffff;
-    text-shadow: 0 0 20px #00ffff, 0 0 35px rgba(0, 255, 255, 0.6);
-    letter-spacing: 8px;
-    background: rgba(0, 0, 0, 0.3);
+    color: #00ffff; /* Bright cyan */
+    text-shadow: 0 0 20px #00ffff, 0 0 35px rgba(0, 255, 255, 0.6); /* Stronger neon glow */
+    letter-spacing: 8px; /* Spaced out for digital look */
+    background: rgba(0, 0, 0, 0.3); /* Darker background for the display area */
     padding: 15px 25px;
     border-radius: 10px;
     border: 1px solid rgba(0, 255, 255, 0.3);
-    display: inline-block;
-    min-width: 250px;
+    display: inline-block; /* To make padding work */
+    min-width: 250px; /* Ensure consistent width */
 }
 
 .button-group {
     display: flex;
     justify-content: center;
-    gap: 25px;
+    gap: 25px; /* More space between buttons */
     margin-bottom: 40px;
 }
 
 button {
-    padding: 18px 35px;
+    padding: 18px 35px; /* Larger buttons */
     font-size: 1.3em;
     font-weight: 700;
-    border: 2px solid #00ffff;
-    border-radius: 10px;
+    border: 2px solid #00ffff; /* Cyan border */
+    border-radius: 10px; /* Slightly rounded for tech feel */
     cursor: pointer;
-    transition: all 0.3s ease-in-out;
-    background: rgba(50, 60, 70, 0.6);
-    color: #00ffff;
-    box-shadow: 0 0 15px rgba(0, 255, 255, 0.3);
-    text-transform: uppercase;
+    transition: all 0.3s ease-in-out; /* Smooth transition */
+    background: rgba(50, 60, 70, 0.6); /* Semi-transparent dark background */
+    color: #00ffff; /* Cyan text */
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.3); /* Subtle button glow */
+    text-transform: uppercase; /* Uppercase text */
     letter-spacing: 1px;
 }
 
 button:hover {
-    background: #00ffff;
-    color: #1a252f;
-    box-shadow: 0 0 25px #00ffff, 0 0 40px rgba(0, 255, 255, 0.6);
-    transform: translateY(-3px) scale(1.02);
+    background: #00ffff; /* Fill with cyan on hover */
+    color: #1a252f; /* Dark text on hover */
+    box-shadow: 0 0 25px #00ffff, 0 0 40px rgba(0, 255, 255, 0.6); /* Stronger glow */
+    transform: translateY(-3px) scale(1.02); /* Lift and slightly enlarge */
 }
 
 button:active {
-    transform: translateY(0) scale(0.98);
+    transform: translateY(0) scale(0.98); /* Press effect */
     box-shadow: 0 0 10px rgba(0, 255, 255, 0.2);
 }
 
-#decrementBtn::before {
-    content: '−';
-    margin-right: 8px;
-}
-
-#incrementBtn::before {
-    content: '+';
-    margin-right: 8px;
-}
-
-#resetBtn::before {
-    content: '↻';
-    margin-right: 8px;
-}
+/* Specific button text for icons */
+#decrementBtn::before { content: '−'; margin-right: 8px; } /* Minus sign */
+#incrementBtn::before { content: '+'; margin-right: 8px; } /* Plus sign */
+#resetBtn::before { content: '↻'; margin-right: 8px; } /* Reset icon */
 
 #storyBtn {
-    background: rgba(100, 50, 150, 0.6);
-    border: 2px solid #ff00ff;
-    color: #ff00ff;
+    background: rgba(100, 50, 150, 0.6); /* Purple-ish background */
+    border: 2px solid #ff00ff; /* Magenta border */
+    color: #ff00ff; /* Magenta text */
     box-shadow: 0 0 15px rgba(255, 0, 255, 0.3);
-    margin-top: 20px;
+    margin-top: 20px; /* Space above this button */
 }
-
 #storyBtn:hover {
-    background: #ff00ff;
-    color: #1a252f;
+    background: #ff00ff; /* Fill with magenta on hover */
+    color: #1a252f; /* Dark text on hover */
     box-shadow: 0 0 25px #ff00ff, 0 0 40px rgba(255, 0, 255, 0.6);
 }
 
 .clicks-info {
-    font-family: 'Space Mono', monospace;
+    font-family: 'Space Mono', monospace; /* Digital font for info */
     font-size: 1.2em;
     margin-top: 30px;
-    background: rgba(40, 50, 60, 0.6);
+    background: rgba(40, 50, 60, 0.6); /* Darker semi-transparent background */
     padding: 25px;
     border-radius: 15px;
-    border: 1px dashed rgba(0, 255, 255, 0.3);
-    box-shadow: inset 0 0 10px rgba(0, 255, 255, 0.1);
-    color: #aaffff;
+    border: 1px dashed rgba(0, 255, 255, 0.3); /* Dashed cyan border */
+    box-shadow: inset 0 0 10px rgba(0, 255, 255, 0.1); /* Inner glow */
+    color: #aaffff; /* Lighter cyan text */
 }
 
 .clicks-info p {
@@ -145,20 +146,19 @@ button:active {
     justify-content: space-between;
     align-items: center;
     padding: 5px 0;
-    border-bottom: 1px dashed rgba(0, 255, 255, 0.15);
+    border-bottom: 1px dashed rgba(0, 255, 255, 0.15); /* Subtle dashed separator */
 }
-
 .clicks-info p:last-child {
     border-bottom: none;
 }
 
 .clicks-info span {
     font-weight: 700;
-    color: #00ffff;
-    text-shadow: 0 0 10px rgba(0, 255, 255, 0.6);
-    min-width: 50px;
+    color: #00ffff; /* Bright cyan for numbers */
+    text-shadow: 0 0 10px rgba(0, 255, 255, 0.6); /* Number glow */
+    min-width: 50px; /* Ensure consistent spacing */
     text-align: right;
-    font-size: 1.4em;
+    font-size: 1.4em; /* Larger count numbers */
     letter-spacing: 2px;
 }
 
@@ -166,13 +166,13 @@ button:active {
     font-family: 'Inter', sans-serif;
     font-size: 1.1em;
     margin-top: 30px;
-    background: rgba(60, 40, 70, 0.6);
+    background: rgba(60, 40, 70, 0.6); /* Darker semi-transparent background for story */
     padding: 25px;
     border-radius: 15px;
-    border: 1px dashed rgba(255, 0, 255, 0.3);
-    box-shadow: inset 0 0 10px rgba(255, 0, 255, 0.1);
-    color: #ffaaff;
-    min-height: 80px;
+    border: 1px dashed rgba(255, 0, 255, 0.3); /* Dashed magenta border */
+    box-shadow: inset 0 0 10px rgba(255, 0, 255, 0.1); /* Inner glow */
+    color: #ffaaff; /* Lighter magenta text */
+    min-height: 80px; /* Ensure space for story */
     display: flex;
     align-items: center;
     justify-content: center;
