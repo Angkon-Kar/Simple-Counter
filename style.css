@@ -119,3 +119,11 @@ button:active {
     content: '↻';
     margin-right: 8px;
 }
+
+#storyBtn {
+    background: rgba(100, 50, 150, 0.6);
+    border: 2px solid #ff00ff;
+    color: #ff00ff;
+    box-shadow: 0 0 15px rgba(255, 0, 255, 0.3);
+    margin-top: 20px;
+}
