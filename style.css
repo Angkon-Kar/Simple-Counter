@@ -172,3 +172,21 @@ button:active {
     letter-spacing: 2px;
 }
 
+
+.story-display {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.1em;
+    margin-top: 30px;
+    background: rgba(60, 40, 70, 0.6);
+    padding: 25px;
+    border-radius: 15px;
+    border: 1px dashed rgba(255, 0, 255, 0.3);
+    box-shadow: inset 0 0 10px rgba(255, 0, 255, 0.1);
+    color: #ffaaff;
+    min-height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    line-height: 1.5;
+}
