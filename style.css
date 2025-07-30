@@ -69,3 +69,10 @@ body::before {
     display: inline-block;
     min-width: 250px;
 }
+
+.button-group {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-bottom: 40px;
+}
