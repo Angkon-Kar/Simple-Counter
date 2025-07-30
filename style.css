@@ -99,3 +99,7 @@ button:hover {
     transform: translateY(-3px) scale(1.02);
 }
 
+button:active {
+    transform: translateY(0) scale(0.98);
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.2);
+}
