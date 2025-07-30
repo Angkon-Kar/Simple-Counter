@@ -91,3 +91,11 @@ button {
     text-transform: uppercase;
     letter-spacing: 1px;
 }
+
+button:hover {
+    background: #00ffff;
+    color: #1a252f;
+    box-shadow: 0 0 25px #00ffff, 0 0 40px rgba(0, 255, 255, 0.6);
+    transform: translateY(-3px) scale(1.02);
+}
+
