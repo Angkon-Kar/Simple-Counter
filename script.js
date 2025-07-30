@@ -5,7 +5,8 @@ let decClicks = 0;
 
 // Load saved state from localStorage
 count = parseInt(localStorage.getItem('count')) || 0;
-
+incClicks = parseInt(localStorage.getItem('incClicks')) || 0;
+decClicks = parseInt(localStorage.getItem('decClicks')) || 0;
 
 // Cache DOM elements for performance
 const countElement = document.getElementById('count');
