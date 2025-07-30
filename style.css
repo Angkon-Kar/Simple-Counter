@@ -40,3 +40,14 @@ body::before {
     z-index: 1;
 }
 
+.header {
+    font-family: 'space-mono', monospace;
+    font-size: 2.8rem;
+    font-weight: 700;
+    margin-bottom: 30px;
+    color: #00ffff;
+    text-shadow: 
+        0 0 10px #00ffff,
+        0 0 20px rgba(0, 255, 255, 0.5);
+    letter-spacing: 2px;
+}
