@@ -109,3 +109,7 @@ button:active {
     margin-right: 8px;
 }
 
+#incrementBtn::before {
+    content: '+';
+    margin-right: 8px;
+}
