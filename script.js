@@ -47,6 +47,8 @@ function inc() {
     count++;
     incClicks++;
     updateDisplay();
+    clickSound.currentTime = 0;
+    clickSound.play(); // 🔊 Sound on increment
 }
 
 /**
