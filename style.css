@@ -144,5 +144,17 @@ button:active {
     border-radius: 15px;
     border: 1px dashed rgba(0, 255, 255, 0.3);
     box-shadow: inset 0 0 10px rgba(0, 255, 255, 0.1);
-    color: #aaffff;}
+    color: #aaffff;
+}
+
+
+.clicks-info p {
+    margin: 12px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 0;
+    border-bottom: 1px dashed rgba(0, 255, 255, 0.15);
+}
+
 
