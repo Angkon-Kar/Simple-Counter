@@ -3,6 +3,10 @@ let count = 0;
 let incClicks = 0;
 let decClicks = 0;
 
+// Load saved state from localStorage
+count = parseInt(localStorage.getItem('count')) || 0;
+
+
 // Cache DOM elements for performance
 const countElement = document.getElementById('count');
 const incCountElement = document.getElementById('incCount');
