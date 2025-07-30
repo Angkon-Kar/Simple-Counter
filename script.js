@@ -32,6 +32,11 @@ function updateDisplay() {
     countElement.textContent = count;
     incCountElement.textContent = incClicks;
     decCountElement.textContent = decClicks;
+    
+    // Save updated state to localStorage
+    localStorage.setItem('count', count);
+    localStorage.setItem('incClicks', incClicks);
+    localStorage.setItem('decClicks', decClicks);
 }
 
 /**
