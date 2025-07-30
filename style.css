@@ -103,3 +103,9 @@ button:active {
     transform: translateY(0) scale(0.98);
     box-shadow: 0 0 10px rgba(0, 255, 255, 0.2);
 }
+
+#decrementBtn::before {
+    content: '−';
+    margin-right: 8px;
+}
+
